@@ -30,7 +30,7 @@ I disassembled the bulb. It's made up of two boards. The one with the LEDs on it
 
 The connector block on the LED board has the following connections:
 
-|||
+&nbsp;|&nbsp;|&nbsp;|&nbsp;
 -|-|-|-
 ?|RGB LED array common anode|Driver pin 1 (VCC)|Driver bottom pad (Ground)
 ?|510 ohm resistor to driver pin 2 (DIM3)|510 ohm resistor to driver pin 3 (DIM2)|510 ohm resistor to driver pin 4 (DIM1)
