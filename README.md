@@ -26,7 +26,7 @@ You can send commands to the bulb by sending JSON packets to the bulb on UDP 388
 - `method` can be set to various things. I've only tried out `setPilot` but I know there are plenty more for controlling aspects of the bulb other than the color.
 - `params` contains more details about the request. For `setPilot`, it contains info about what color you're setting the bulb to. `r`, `g`, and `b`` are usual RGB LED values, and `w` and `c` are values for the warm white and cool white LEDs. Values are 0-255 inclusive. I'm pretty sure there's another alternate param you can send here instead of component values to use a preset stored on the bulb.
 
-I disassembled the bulb. It's made up of two boards. The one with the LEDs on it has an LED array driver IC labeled SM15133EK. I found a datasheet that seems to correspond to it [here](https://www.alldatasheet.com/datasheet-pdf/pdf/1133954/LINKAGE/SM1533E.html), though it's in Chinese.
+I disassembled the bulb. It's made up of two boards. The one with the LEDs on it has an LED array driver IC labeled SM15133EK. I found a datasheet that seems to correspond to it [here](https://www.alldatasheet.com/datasheet-pdf/pdf/1133954/LINKAGE/SM1533E.html), though it's in Chinese. The R_IN pin of the IC is connected to ground through a 3.9k ohm resistor.
 
 The connector block on the LED board has the following connections:
 
